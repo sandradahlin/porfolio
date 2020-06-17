@@ -2,15 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 //back img
 const ProjectIntro = (props) => {
-    console.log(props);
+    console.log(props, props);
     return (
         <section
             className="project project__background-image"
             style={{
-                backgroundImage: `linear-gradient(rgba(0,0, 0, 0.7) , rgba(128, 104, 153, 0.7)),url(${props.project.bgImg})`
+                backgroundImage: `url(${props.project.bgImg})`
             }}
         >
-            {/* <div className="project__text-box-absolute">
+            <div className="project__text-box-absolute">
                 <h2 className="heading-secondary u-margin-bottom-medium ">
                     {props.project.projectName}
                 </h2>
@@ -23,7 +23,7 @@ const ProjectIntro = (props) => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <a className="btn-full-beige">VISIT WEBSITE</a>
-            </div> */}
+            </div>
         </section>
     );
 };

@@ -18,6 +18,12 @@ function App() {
                             path="/projects"
                             component={Projectspage}
                         />
+                        <Route
+                            exact
+                            path="/projects"
+                            component={Projectspage}
+                        />
+
                         <Route exact path="/projects/:id" component={Project} />
                     </Switch>
                 </Router>

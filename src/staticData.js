@@ -1,12 +1,29 @@
 import latoFontImage from "./img/lato.png";
 
+import hawaiiSliderImage1 from "./img/hawaii-laptop-1.png";
+import hawaiiSliderImage2 from "./img/hawaii-laptop-2.png";
+import hawaiiSliderImage3 from "./img/hawaii-laptop-3.png";
+
+import mindfulSliderImage1 from "./img/Project_Mindful-1.png";
+import mindfulSliderImage2 from "./img/Project_Mindful-2.png";
+
+import movieSliderImage1 from "./img/Project_MovieApp-1.png";
+import movieSliderImage2 from "./img/Project_MovieApp-2.png";
+import movieSliderImage3 from "./img/Project_MovieApp-3.png";
+import movieSliderImage4 from "./img/Project_MovieApp-4.png";
+import movieSliderImage5 from "./img/Project_MovieApp-5.png";
+
+import movieAppColors from "./img/movieappColor.jpg";
+import hawaiiColors from "./img/hawaiiColors.jpg";
+import mindfulColors from "./img/mindfulColorsjpg.jpg";
+
 export const projectsData = [
     {
         id: 1,
         name: "Weddings Hawaii",
         client: "Student Project",
         desc:
-            "Landing page for a fictional wedding company based in Hawaii. This project is inspired by a wedding company I had contact with. The purpose of this Project was to practise the design skills and improve my skills in CSS.",
+            "Landing page for a fictional wedding company based in Hawaii. This project is inspired by a wedding company I had contact with. The purpose of this project was to practise the design skills and improve my skills in CSS.",
         tech:
             "The main idea behind building this website was improving on my HTML, CSS skills as well as working on simple animations and making the website responsive.",
         bgImg: "",
@@ -14,7 +31,13 @@ export const projectsData = [
         designIntro:
             "The main idea behind the website was to have a pleasant and elegant feeling as well as to reflect the sunny and relaxed atmosphere of Hawaii.",
         designTypographyImg: latoFontImage,
-        designColorsImg: ""
+        designColorsImg: hawaiiColors,
+        textColorIntro: "#333",
+        sliderImages: [
+            hawaiiSliderImage1,
+            hawaiiSliderImage2,
+            hawaiiSliderImage3
+        ]
     },
     {
         id: 2,
@@ -30,7 +53,9 @@ export const projectsData = [
         designIntro:
             "By using soft and gentle colors the website should give the feeling of relaxation and ease.",
         designTypographyImg: latoFontImage,
-        designColorsImg: ""
+        designColorsImg: mindfulColors,
+        textColorIntro: "#fff",
+        sliderImages: [mindfulSliderImage1, mindfulSliderImage2]
     },
     {
         id: 3,
@@ -46,7 +71,15 @@ export const projectsData = [
         designIntro:
             "The website is using a lot of images to associate the user with the movies and the movie world. More subtle colors were used so as to achieve a clean and modern look that plays along with the heavy use of images.",
         designTypographyImg: latoFontImage,
-        designColorsImg: ""
+        designColorsImg: movieAppColors,
+        textColorIntro: "#fff",
+        sliderImages: [
+            movieSliderImage1,
+            movieSliderImage2,
+            movieSliderImage3,
+            movieSliderImage4,
+            movieSliderImage5
+        ]
     },
     {
         id: 4,
@@ -61,6 +94,7 @@ export const projectsData = [
         link: "https://contacts--keeper-app.herokuapp.com/",
         designIntro: "",
         designTypographyImg: "",
+        textColorIntro: "#333",
         designColorsImg: ""
     }
 ];

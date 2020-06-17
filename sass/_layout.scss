@@ -50,7 +50,8 @@
     display: flex;
     justify-content: flex-end;
 
-    .main-nav {
+    .main-nav,
+    .secondary-nav {
         display: flex;
         margin-right: 3rem;
         li {
@@ -64,8 +65,11 @@
 }
 
 .secondary-nav {
-    height: 10vh;
+    height: 5vh;
+    background-color: transparent;
+    z-index: 22;
 }
+
 section {
     padding: 10rem 0;
 }
