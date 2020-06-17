@@ -1,0 +1,57 @@
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-family: "Raleway", sans-serif;
+}
+
+.heading-primary {
+    color: #555;
+    font-weight: 400;
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+    &--sub {
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+.heading-secondary {
+    color: #333;
+    font-weight: 300;
+    font-size: 7rem;
+}
+
+.heading-secondary:after {
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 20rem;
+    background-color: #999;
+    margin: 2rem 0;
+}
+
+.heading-tertiary {
+    font-size: 4rem;
+    color: #555;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.heading-tertiary:after {
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 15rem;
+    background-color: rgb(221, 205, 63);
+    margin: 2rem 0;
+}
+
+.paragraph {
+    font-size: 2.3rem;
+    color: #333;
+    letter-spacing: 0.8px;
+}

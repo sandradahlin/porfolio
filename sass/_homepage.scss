@@ -1,0 +1,108 @@
+.section-about {
+    img {
+        height: 60rem;
+    }
+}
+
+.text-box {
+    color: #333;
+    margin-top: 4rem;
+    margin-left: 10rem;
+}
+
+.section-skills {
+    min-height: 70vh;
+    // background-color: rgba(170, 170, 170, 0.2);
+    background-color: rgba(207, 230, 225, 0.6);
+
+    &__skill-box {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.skill-icons {
+    i {
+        font-size: 10rem;
+        margin-bottom: 1rem;
+        transition: all 0.3s;
+    }
+
+    display: flex;
+    text-align: center;
+    li:not(:last-child) {
+        margin-right: 5rem;
+    }
+    p {
+        font-size: 2.1rem;
+        color: #444;
+    }
+    .logo-img {
+        height: 10rem;
+        margin-bottom: 1rem;
+        transition: all 0.3s;
+    }
+}
+.fa-html5:hover {
+    color: #e34c26;
+}
+.fa-css3-alt:hover {
+    color: #264de4;
+}
+.fa-js:hover {
+    color: #f0db4f;
+}
+.fa-react:hover {
+    color: #61dbfb;
+}
+.logo-img {
+    filter: grayscale(100%) brightness(120%);
+}
+.logo-img:hover {
+    filter: grayscale(0%);
+}
+
+.fa-git-alt:hover {
+    color: #f1502f;
+}
+.logo-img-small {
+    filter: grayscale(100%) brightness(120%);
+}
+
+.logo-img-small:hover {
+    filter: grayscale(0%);
+}
+
+.fa-node:hover {
+    color: #3c873a;
+}
+.fa-sass:hover {
+    color: #c69;
+}
+
+.skill-icons-small {
+    i {
+        font-size: 5rem;
+    }
+
+    display: flex;
+    text-align: center;
+    li:not(:last-child) {
+        margin-right: 3rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    .logo-img-small {
+        height: 5rem;
+    }
+}
+
+.section-projects {
+    img {
+        height: 50rem;
+    }
+}

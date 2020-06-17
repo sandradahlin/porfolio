@@ -1,0 +1,94 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(216, 208, 174, 0.5),
+            rgba(216, 208, 174, 0.5)
+        ),
+        (url("/img/startpage.jpg"));
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__profile-pic {
+        height: 20rem;
+        border-radius: 50%;
+    }
+
+    &__intro-box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1.3rem;
+}
+
+.social-links li {
+    margin-right: 2rem;
+
+    i {
+        color: #fff;
+        background-color: #777;
+        padding: 1.2rem;
+        border-radius: 100px;
+    }
+}
+
+.nav {
+    font-size: 2.6rem;
+    padding-top: 1rem;
+    font-weight: 400;
+    color: #555;
+    display: flex;
+    justify-content: flex-end;
+
+    .main-nav {
+        display: flex;
+        margin-right: 3rem;
+        li {
+            margin-right: 2rem;
+            &:not(:last-child)::after {
+                content: "|";
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+.secondary-nav {
+    height: 10vh;
+}
+section {
+    padding: 10rem 0;
+}
+
+.box-background-light {
+    padding: 3.5rem;
+
+    background-color: rgba(255, 255, 248, 0.6);
+}
+
+.box-background-dark {
+    padding: 3.5rem;
+    background-color: rgba(216, 208, 174, 0.93);
+}
+
+.align {
+    display: flex;
+    align-items: center;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

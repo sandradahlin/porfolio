@@ -1,0 +1,34 @@
+.project {
+    position: relative;
+    &__background-image {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    &__text-box-absolute {
+        position: absolute;
+        width: 40%;
+        display: block;
+        // height: 45vh;
+        height: auto;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__carousel-container {
+        height: 40vh;
+    }
+    &__design-typography {
+        width: 100%;
+    }
+    &__design-colors {
+        width: 80%;
+    }
+}
+
+.carousel-status {
+    display: none;
+}
