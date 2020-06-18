@@ -65,7 +65,7 @@
 }
 
 .secondary-nav {
-    height: 5vh;
+    height: 7vh;
     background-color: transparent;
     z-index: 22;
 }
@@ -95,4 +95,65 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.text-box-left {
+    width: 50%;
+}
+
+.text-box-right {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.section-movie-app {
+    height: 100vh;
+    background-image: url("/img/movieAppCover.jpg");
+    background-position: top;
+    margin-top: -20vh;
+    z-index: -1;
+}
+.section-hawaii {
+    clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+    background-image: url("/img/backgroundImgHawaii.png");
+    margin-top: -20vh;
+    height: 100vh;
+}
+
+.section-mindful {
+    height: 100vh;
+    margin-top: -20vh;
+
+    background-image: url("/img/mindfulCover.png");
+    background-position: center;
+
+    clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+}
+.section-contacts-app {
+    height: 90vh;
+
+    background-image: url("/img/contactsCover.png");
+    background-position: center;
+    clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+    margin-top: -20vh;
+}
+
+.section-slider {
+    position: relative;
+    height: 65vh;
+}
+
+.section-slider::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    height: 0.8px;
+    width: 40rem;
+    background-color: #999;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.section-design {
+    margin-top: 5%;
 }

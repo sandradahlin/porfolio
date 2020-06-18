@@ -2,46 +2,76 @@ import React, { useState, useEffect } from "react";
 import ProjectIntro from "../components/ProjectIntro";
 import ProjectImageLeft from "../components/ProjectImageLeft";
 import ProjectDesign from "../components/ProjectDesign";
-import bgImg from "../img/movieAppCover.jpg";
 import Navbar from "../components/NavbarOtherPages";
 import OtherProjects from "../components/OtherProjects";
 import { projectsData } from "../staticData";
+import { render } from "@testing-library/react";
 
-const Project = () => {
+const Project = (props) => {
     const [project, setProject] = useState({
         bgImg: "",
-        projectName: "",
-        projectPurpose: "",
-        projectIntro: ""
+        name: "",
+        client: "",
+        textColorIntro: "",
+        desc: "",
+        tech: "",
+        link: "",
+        designIntro: "",
+        designTypographyImg: "",
+        designColorsImg: "",
+        textColorIntro: "",
+        sliderImages: []
     });
 
     useEffect(() => {
-        console.log(projectsData);
+        const id = props.match.params.id;
+        const filtered = { ...projectsData.filter((par) => par.id == id) };
+        const projectToShow = filtered[0];
+
         setProject({
-            bgImg,
-            projectName: "Weddings Hawaii",
-            projectPurpose: "Student Project",
-            projectIntro: "lorem"
+            bgImg: projectToShow.bgImg,
+            name: projectToShow.name,
+            client: "Student Project",
+            textColorIntro: projectToShow.textColorIntro,
+            desc: projectToShow.desc,
+            tech: projectToShow.tech,
+            link: projectToShow.link,
+            designIntro: projectToShow.designIntro,
+            designTypographyImg: projectToShow.designTypographyImg,
+            designColorsImg: projectToShow.designColorsImg,
+            textColorIntro: projectToShow.textColorIntro,
+            sliderImages: projectToShow.sliderImages
         });
-    }, []);
+    }, [props.match.params.id]);
 
-    //@todo sen an id on click from projectspage to a certain project and filter out
-    //the projects to be shown
-    // const renderProjects = () => {
-    //     projectsData.map(project => {
-    //         return(
-
-    //         )
-    //     })
-    // }
+    const renderComponents = () => {
+        if (project) {
+            return (
+                <>
+                    <ProjectIntro
+                        project={project}
+                        id={props.match.params.id}
+                    />
+                    <ProjectImageLeft
+                        desc={project.tech}
+                        img={project.sliderImages}
+                    />
+                    <ProjectDesign
+                        id={props.match.params.id}
+                        designintro={project.designIntro}
+                        typo={project.designTypographyImg}
+                        colors={project.designColorsImg}
+                    />
+                    <OtherProjects />
+                </>
+            );
+        }
+    };
 
     return (
         <React.Fragment>
             <Navbar />
-            <ProjectIntro />
-            <ProjectImageLeft />
-            <ProjectDesign />
-            <OtherProjects />
+            {renderComponents()}
         </React.Fragment>
     );
 };

@@ -5,6 +5,12 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
+        background-color: linear-gradient(
+            to right bottom,
+            rgba(216, 208, 174, 0.5),
+            rgba(216, 208, 174, 0.5)
+        );
+        position: relative;
     }
 
     &__text-box-absolute {
@@ -29,6 +35,29 @@
     }
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(216, 208, 174, 0.5);
+}
+
 .carousel-status {
     display: none;
+}
+
+.projects-page {
+    background-color: $background-color-light-grey;
+    background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+        ),
+        url("/img/projectsCover.jpg");
+    z-index: 2;
+    background-size: cover;
+    height: 90vh;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
 }
