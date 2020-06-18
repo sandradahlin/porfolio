@@ -62,7 +62,7 @@ const Project = (props) => {
                         typo={project.designTypographyImg}
                         colors={project.designColorsImg}
                     />
-                    <OtherProjects />
+                    <OtherProjects name={project.name} />
                 </>
             );
         }

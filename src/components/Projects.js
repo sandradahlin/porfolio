@@ -7,7 +7,7 @@ const Projects = () => {
             <div className="row align-center">
                 <h3 className="heading-tertiary">Projects</h3>
                 <img src={projectsImage} className="u-margin-bottom-big "></img>
-                <Link to="/">
+                <Link to="/projects">
                     <span className="btn-full-beige">SEE MORE</span>
                 </Link>
             </div>

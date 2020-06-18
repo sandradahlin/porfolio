@@ -4,12 +4,12 @@ import mongoLogo from "../img/mongoLogo.png";
 
 const Skills = () => {
     return (
-        <section className="section-skills">
+        <section className="section-skills" id="skills">
             <div className="row align">
                 <div className="col-1-of-2">
                     <div className="box-background-light">
                         <h3 className="heading-tertiary">Skills</h3>
-                        <p className="paragraph ">
+                        <p className="paragraph  ">
                             So far I have mostly worked with front end, but I
                             enjoy backend as much and am willing to learn.{" "}
                             <br />I have worked with JavaScript, HTML, CSS,
@@ -18,6 +18,12 @@ const Skills = () => {
                             quickly and I am always enthusiastic about trying
                             out new solutions, frameworks, or principles.
                         </p>
+                        <p className="paragraph u-margin-bottom-medium">
+                            You can check out my CV on LinkedIn.
+                        </p>
+                        <a href="" className="btn-ghost-dark">
+                            OPEN LINKEDIN
+                        </a>
                     </div>
                 </div>
                 <div className="col-2-of-2 section-skills__skill-box">

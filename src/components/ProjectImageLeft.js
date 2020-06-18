@@ -4,19 +4,11 @@ import { Carousel } from "react-responsive-carousel";
 import CarouselComponent from "./CarouselComponent";
 
 const ProjectImageSlider = (props) => {
-    const renderSlider = () => {
-        return (
-            <Carousel autoPlay infiniteLoop className="my-carousel">
-                {props.img.map((img) => {
-                    return (
-                        <div>
-                            <img src={img} />
-                        </div>
-                    );
-                })}
-            </Carousel>
-        );
-    };
+    //     const renderSlider = () => {
+    //         return (
+
+    //         );
+    //     };
     console.log(props);
     return (
         <section className="section-slider">
@@ -27,7 +19,17 @@ const ProjectImageSlider = (props) => {
                 </div>
                 <div className="col-1-of-2 ">
                     <div className="project__carousel-container">
-                        {renderSlider()}
+                        {/* {renderSlider()} */}
+                        <CarouselComponent img={props.img} />
+                        {/* <Carousel autoPlay infiniteLoop>
+                            {props.img.map((img) => {
+                                return (
+                                    <div>
+                                        <img src={img} />
+                                    </div>
+                                );
+                            })}
+                        </Carousel> */}
                     </div>
                 </div>
             </div>

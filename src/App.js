@@ -5,12 +5,14 @@ import Homepage from "./views/Homepage";
 import Projectspage from "./views/Projectspage";
 import Project from "./views/Project";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
         <>
             <main>
                 <Router>
+                    <ScrollToTop />
                     <Switch>
                         <Route exact path="/" component={Homepage} />
                         <Route
