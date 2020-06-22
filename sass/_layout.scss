@@ -5,7 +5,7 @@
             rgba(216, 208, 174, 0.5),
             rgba(216, 208, 174, 0.5)
         ),
-        (url("/img/startpage.jpg"));
+        (url("/img/startpage-min.jpg"));
     background-size: cover;
     background-position: top;
     position: relative;
@@ -136,7 +136,7 @@ section {
 }
 .section-hawaii {
     clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
-    background-image: url("/img/backgroundImgHawaii.png");
+    background-image: url("/img/backgroundImgHawaii-min.png");
     margin-top: -20vh;
     height: 100vh;
 }
@@ -145,7 +145,7 @@ section {
     height: 100vh;
     margin-top: -20vh;
 
-    background-image: url("/img/mindfulCover.png");
+    background-image: url("/img/mindfulCover-min.png");
     background-position: center;
 
     clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
@@ -153,7 +153,7 @@ section {
 .section-contacts-app {
     height: 90vh;
 
-    background-image: url("/img/contactsCover.png");
+    background-image: url("/img/contactsCover-min.png");
     background-position: center;
     clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
     margin-top: -20vh;

@@ -4,14 +4,14 @@ import hawaiiSliderImage1 from "./img/hawaii-laptop-1.png";
 import hawaiiSliderImage2 from "./img/hawaii-laptop-2.png";
 import hawaiiSliderImage3 from "./img/hawaii-laptop-3.png";
 
-import mindfulSliderImage1 from "./img/Project_Mindful-1.png";
-import mindfulSliderImage2 from "./img/Project_Mindful-2.png";
+import mindfulSliderImage1 from "./img/Project_Mindful-1-min.png";
+import mindfulSliderImage2 from "./img/Project_Mindful-2-min.png";
 
-import movieSliderImage1 from "./img/Project_MovieApp-1.png";
-import movieSliderImage2 from "./img/Project_MovieApp-2.png";
-import movieSliderImage3 from "./img/Project_MovieApp-3.png";
-import movieSliderImage4 from "./img/Project_MovieApp-4.png";
-import movieSliderImage5 from "./img/Project_MovieApp-5.png";
+import movieSliderImage1 from "./img/Project_MovieApp-1-min.png";
+import movieSliderImage2 from "./img/Project_MovieApp-2-min.png";
+import movieSliderImage3 from "./img/Project_MovieApp-3-min.png";
+import movieSliderImage4 from "./img/Project_MovieApp-4-min.png";
+import movieSliderImage5 from "./img/Project_MovieApp-5-min.png";
 
 import movieAppColors from "./img/movieappColor.jpg";
 import hawaiiColors from "./img/hawaiiColors.jpg";
