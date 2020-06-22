@@ -1,7 +1,9 @@
 .heading-primary,
 .heading-secondary,
-.heading-tertiary {
+.heading-tertiary,
+.heading-quaternary {
     font-family: "Raleway", sans-serif;
+    font-weight: 400;
 }
 
 .heading-primary {
@@ -34,7 +36,8 @@
     margin: 2rem 0;
 }
 
-.heading-tertiary {
+.heading-tertiary,
+.heading-tertiary-white {
     font-size: 4rem;
     color: #555;
     margin-bottom: 1rem;
@@ -50,10 +53,47 @@
     margin: 2rem 0;
 }
 
+.heading-tertiary:after {
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 15rem;
+    background-color: rgb(221, 205, 63);
+    margin: 2rem 0;
+}
+
+.heading-tertiary-white::after {
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 15rem;
+    background-color: #f2f2f2;
+    margin: 2rem 0;
+}
+
+.heading-quaternary {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.heading-quaternary::after {
+    display: block;
+    content: " ";
+    height: 1px;
+    width: 15rem;
+    background-color: rgb(221, 205, 63);
+    margin: 1rem 0;
+}
+
 .paragraph {
     font-size: 2.3rem;
     color: #333;
     letter-spacing: 0.8px;
+}
+
+.paragraph-small {
+    font-size: 2rem;
+    color: #777;
 }
 
 .text-white {

@@ -6,7 +6,7 @@ import { projectsData } from "../staticData";
 const Projectpage = () => {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <section className="projects-page">
                 <div className="row">
                     <div className="box-background-dark text-box-left">

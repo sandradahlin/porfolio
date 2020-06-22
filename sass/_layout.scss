@@ -9,6 +9,8 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    margin-top: -7vh;
+    z-index: -11;
 
     &__profile-pic {
         height: 20rem;
@@ -23,12 +25,12 @@
         text-align: center;
     }
 }
+
 .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    margin-top: 1.3rem;
 }
 
 .social-links li {
@@ -43,24 +45,44 @@
 }
 
 .nav {
-    font-size: 2.6rem;
-    padding-top: 1rem;
-    font-weight: 400;
-    color: #555;
+    font-size: 2.3rem;
+    padding: 1.5rem 0;
+    font-weight: 300;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    height: 7vh;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
 
     .main-nav,
     .secondary-nav {
         display: flex;
-        margin-right: 3rem;
+        margin: 0 auto; // margin-right: 6rem;
         li {
             margin-right: 2rem;
+            a {
+                color: #555;
+                padding-bottom: 0.5rem;
+                transition: all 0.3s;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    border-bottom: 1px solid rgb(221, 205, 63);
+                    font-size: 2.5rem;
+                }
+            }
             &:not(:last-child)::after {
                 content: "|";
                 margin-left: 2rem;
             }
         }
+    }
+}
+.footer-nav {
+    font-size: 2rem;
+    li a {
+        color: #777;
     }
 }
 
@@ -142,18 +164,40 @@ section {
     height: 65vh;
 }
 
-.section-slider::after {
+.section-slider::after,
+.section-design::after {
     position: absolute;
     display: block;
     content: " ";
     height: 0.8px;
     width: 40rem;
     background-color: #999;
-    bottom: -15%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
+.section-slider::after {
+    bottom: -15%;
+}
+.section-design::after {
+    bottom: -5%;
+}
+
 .section-design {
     margin-top: 5%;
+    position: relative;
+}
+
+footer {
+    background-color: $background-color-green;
+    padding: 4rem 0;
+}
+
+.not-found {
+    font-size: 4rem;
+    font-family: "Raleway", sans-serif;
+    p {
+        display: block;
+        margin-top: 10%;
+    }
 }

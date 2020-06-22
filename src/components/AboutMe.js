@@ -8,8 +8,9 @@ const AboutMe = () => {
                 <div className="col-1-of-2">
                     <img src={computerImage} className="image-left"></img>
                 </div>
-                <div className="col-1-of-2 u-margin-top-big">
-                    <p className="paragraph text-box box-background-dark ">
+                <div className="col-1-of-2 u-margin-top-big text-box box-background-dark ">
+                    <h3 className="heading-tertiary-white">Why code?</h3>
+                    <p className="paragraph ">
                         I love front-end web development because it's creative,
                         challenging and constantly stimulating, inspiring me to
                         strive for constant improvement. I can quickly make

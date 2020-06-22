@@ -1,5 +1,6 @@
 .project {
     position: relative;
+
     &__background-image {
         height: 100vh;
         background-size: cover;
@@ -56,7 +57,6 @@
             rgba(255, 255, 255, 0.6)
         ),
         url("/img/projectsCover.jpg");
-    z-index: 2;
     background-size: cover;
     height: 90vh;
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);

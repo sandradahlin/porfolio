@@ -14,7 +14,7 @@ const ProjectDesign = (props) => {
                     ></img>
                 </div>
                 <div className="col-1-of-2 ">
-                    <h3 className="heading-tertiary">Design koncept</h3>
+                    <h3 className="heading-tertiary">Design</h3>
                     <p className="paragraph u-margin-bottom-medium">
                         {props.designintro}
                     </p>

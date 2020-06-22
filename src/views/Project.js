@@ -68,12 +68,7 @@ const Project = (props) => {
         }
     };
 
-    return (
-        <React.Fragment>
-            <Navbar />
-            {renderComponents()}
-        </React.Fragment>
-    );
+    return <React.Fragment>{renderComponents()}</React.Fragment>;
 };
 //add component with links to other projects
 

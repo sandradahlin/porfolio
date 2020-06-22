@@ -18,6 +18,12 @@ const ProjectIntro = (props) => {
                         : "project__text-box-absolute"
                 } `}
             >
+                <p
+                    className="paragraph uppercase u-margin-bottom-small "
+                    style={{ color: textColorIntro }}
+                >
+                    {client}
+                </p>
                 <h2
                     className="heading-secondary u-margin-bottom-medium "
                     style={{ color: textColorIntro }}
@@ -30,7 +36,15 @@ const ProjectIntro = (props) => {
                 >
                     {desc}
                 </p>
-                <a href={link} className="btn-full-beige">
+                <a
+                    href={link}
+                    target="blank"
+                    className={`${
+                        textColorIntro === "#fff"
+                            ? "btn-ghost-white"
+                            : "btn-ghost-dark"
+                    }`}
+                >
                     VISIT WEBSITE
                 </a>
             </div>

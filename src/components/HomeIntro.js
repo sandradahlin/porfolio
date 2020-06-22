@@ -1,11 +1,11 @@
 import React from "react";
 import profileImg from "../img/profileimg.jpg";
-import Navbar from "./Navbar";
+import SocialLinks from "./SocialLinks";
 
 const HomeIntro = () => {
     return (
         <header className="header">
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="header__intro-box box-background-light">
                 <img className="header__profile-pic" src={profileImg}></img>
                 <div className="header__content-box">
@@ -17,23 +17,7 @@ const HomeIntro = () => {
                             Frontend Web Developer |
                         </span>
                     </h1>
-                    <ul className="social-links">
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="far fa-envelope-open"></i>{" "}
-                            </a>
-                        </li>
-                    </ul>
+                    <SocialLinks className="u-margin-top-small" />
                 </div>
             </div>
         </header>

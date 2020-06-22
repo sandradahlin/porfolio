@@ -6,30 +6,41 @@ import Projectspage from "./views/Projectspage";
 import Project from "./views/Project";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 
 function App() {
     return (
         <>
-            <main>
-                <Router>
-                    <ScrollToTop />
-                    <Switch>
-                        <Route exact path="/" component={Homepage} />
-                        <Route
-                            exact
-                            path="/projects"
-                            component={Projectspage}
-                        />
-                        <Route
-                            exact
-                            path="/projects"
-                            component={Projectspage}
-                        />
+            <Router>
+                <main>
+                    <div className="wrapper">
+                        <Navbar />
+                        <ScrollToTop />
+                        <Switch>
+                            <Route exact path="/" component={Homepage} />
+                            <Route
+                                exact
+                                path="/projects"
+                                component={Projectspage}
+                            />
+                            <Route
+                                exact
+                                path="/projects"
+                                component={Projectspage}
+                            />
 
-                        <Route exact path="/projects/:id" component={Project} />
-                    </Switch>
-                </Router>
-            </main>
+                            <Route
+                                exact
+                                path="/projects/:id"
+                                component={Project}
+                            />
+                            <Route component={NotFound} />
+                        </Switch>
+                    </div>
+                </main>
+                <Footer />
+            </Router>
         </>
     );
 }
