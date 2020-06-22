@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
+import AppShell from "./components/AppShell";
 
 function App() {
     return (
@@ -17,26 +18,7 @@ function App() {
                     <div className="wrapper">
                         <Navbar />
                         <ScrollToTop />
-                        <Switch>
-                            <Route exact path="/" component={Homepage} />
-                            <Route
-                                exact
-                                path="/projects"
-                                component={Projectspage}
-                            />
-                            <Route
-                                exact
-                                path="/projects"
-                                component={Projectspage}
-                            />
-
-                            <Route
-                                exact
-                                path="/projects/:id"
-                                component={Project}
-                            />
-                            <Route component={NotFound} />
-                        </Switch>
+                        <AppShell />
                     </div>
                 </main>
                 <Footer />
