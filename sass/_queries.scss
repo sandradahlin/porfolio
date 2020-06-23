@@ -1,0 +1,271 @@
+/*Bigger devices*/
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/*Small to big tablet in landscape mode*/
+
+@media only screen and (max-width: 1024px) {
+    .projects-page {
+        height: 50vh;
+    }
+    .section-movie-app,
+    .section-mindful {
+        height: 65vh;
+        padding-top: 23vh;
+    }
+    .section-hawaii {
+        height: 65vh;
+
+        padding-top: 18vh;
+    }
+    .section-contacts-app {
+        height: 70vh;
+
+        padding-top: 18vh;
+    }
+    main {
+        width: 100%;
+    }
+    .section-about img {
+        height: auto;
+    }
+    .text-box-right {
+        margin-left: 0;
+    }
+
+    .image-left {
+        max-width: 100%;
+        height: auto;
+    }
+    .align {
+        display: block;
+    }
+    footer {
+        height: 30%;
+    }
+    .row {
+        max-width: 100%;
+        margin: 0 auto;
+
+        &:not(:last-child) {
+            margin-bottom: $gutter-vertical;
+        }
+
+        [class^="col-"] {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-right: $gutter-horizontal;
+            }
+        }
+        .col-1-of-2,
+        .col-2-of-2,
+        .col-1-of-3 {
+            width: 100%;
+        }
+    }
+
+    body {
+        font-size: 18px;
+    }
+}
+
+/*Small phones to small tablets*/
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 42.5%;
+    }
+
+    .header__intro-box {
+        width: 90%;
+    }
+
+    .project__text-box-absolute {
+        width: 80%;
+        left: 45%;
+    }
+
+    .box-background-dark {
+        padding: 2rem 0;
+    }
+
+    .section-slider div:nth-child(2) {
+        margin-top: 10%;
+        width: 85%;
+    }
+    .project__design-typography {
+        display: none;
+    }
+
+    .section-design::after,
+    .section-slider::after {
+        width: 40%;
+        left: 45%;
+    }
+    .section-slider::after {
+        bottom: 0;
+    }
+
+    .other-projects div p {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 15%;
+    }
+
+    .other-projects__links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav {
+        font-size: 2rem;
+        li::after {
+            display: none;
+        }
+    }
+    .text-box-right {
+        width: 100%;
+        margin-left: 0;
+    }
+    footer {
+        height: 45vh;
+    }
+
+    .projects-page {
+        height: 60vh;
+    }
+    .section-movie-app,
+    .section-mindful {
+        height: 80vh;
+        padding-top: 25vh;
+    }
+    .section-hawaii {
+        height: 90vh;
+        padding-top: 12vh;
+    }
+    .section-contacts-app {
+        height: 70vh;
+        padding-top: 12vh;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-box-left {
+        width: 100%;
+    }
+    .u-margin-top-big {
+        margin-top: 2rem;
+    }
+
+    .col-1-of-3 .u-margin-left-big {
+        margin-left: 0;
+    }
+
+    .col-1-of-3 .social-links .u-margin-top-big {
+        margin-top: 2rem;
+    }
+    .section-projects img {
+        max-width: 100%;
+        height: auto;
+    }
+    .section-about img {
+        height: auto;
+    }
+
+    .section-skills__skill-box {
+        margin-top: 4rem;
+    }
+    .image-left {
+        max-width: 100%;
+    }
+
+    .col-1-of-2,
+    .col-1-of-2,
+    .col-1-of-3 {
+        width: 100%;
+        padding: 0 2rem;
+    }
+    body {
+        font-size: 16px;
+    }
+
+    /* .main-nav {
+      display: none;
+    } */
+
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+        font-size: 90%;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+
+    .sticky .mobile-nav-icon {
+        margin-top: 10px;
+    }
+}
+
+/*Small phones*/
+
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
+    }
+
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+    .col-1-of-2,
+    .col-1-of-2,
+    .col-1-of-3 {
+        width: 100%;
+    }
+}

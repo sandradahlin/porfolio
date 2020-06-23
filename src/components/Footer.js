@@ -6,9 +6,9 @@ import SocialLinks from "./SocialLinks";
 const Footer = () => {
     return (
         <footer>
-            <div className="row">
-                <div className="col-1-of-3 ">
-                    <div className="u-margin-left-medium">
+            <div className="row display-flex-row--space-between ">
+                <div className="display-flex-row--start ">
+                    <div>
                         <h4 className="heading-quaternary ">Contact me</h4>
                         <a
                             href="mailto:a.toholjevic@gmail.com"
@@ -19,19 +19,14 @@ const Footer = () => {
                         <p className="paragraph-small">073 692 36 61</p>
                         <p className="paragraph-small">211 27 Malmö</p>
                     </div>
-                </div>
 
-                <div className="col-1-of-3">
-                    <SocialLinks className="u-margin-top-big" />
-                </div>
-                <div className="col-1-of-3">
-                    <div className="u-margin-left-big">
+                    <div>
                         <h4 className="heading-quaternary ">Navigation</h4>
-                        <BasicNavigation
-                            className="footer-nav"
-                            additionalItem="Home"
-                        />
+                        <BasicNavigation className="footer-nav" />
                     </div>
+                </div>
+                <div>
+                    <SocialLinks className="u-margin-top-big" />
                 </div>
             </div>
         </footer>

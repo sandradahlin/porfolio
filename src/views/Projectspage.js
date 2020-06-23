@@ -31,7 +31,7 @@ const Projectpage = () => {
 
             <section className="section-movie-app">
                 <div className="row ">
-                    <div className="col 1-of-2 text-box-right u-margin-top-big">
+                    <div className="col-1-of-2 text-box-right u-margin-top-big">
                         <h2 className="heading-secondary text-white">
                             {projectsData[2].name}
                         </h2>
@@ -49,7 +49,7 @@ const Projectpage = () => {
             </section>
             <section className="section-hawaii ">
                 <div className="row">
-                    <div className="col 1-of-2 text-box-left u-margin-top-large">
+                    <div className="col-1-of-2 text-box-left u-margin-top-large">
                         <h2 className="heading-secondary ">
                             {" "}
                             {projectsData[0].name}
@@ -68,8 +68,8 @@ const Projectpage = () => {
             </section>
             <section className="section-mindful ">
                 <div className="row">
-                    <div className="make-flex">
-                        <div className="col 1-of-2 text-box-right u-margin-top-big">
+                    <div>
+                        <div className="col-1-of-2 text-box-right u-margin-top-big">
                             <h2 className="heading-secondary text-white">
                                 {projectsData[1].name}
                             </h2>
@@ -88,7 +88,7 @@ const Projectpage = () => {
             </section>
             <section className="section-contacts-app">
                 <div className="row">
-                    <div className="col 1-of-2 text-box-left u-margin-top-large">
+                    <div className="col-1-of-2 text-box-left u-margin-top-large">
                         <h2 className="heading-secondary ">
                             {" "}
                             {projectsData[3].name}

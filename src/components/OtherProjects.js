@@ -29,7 +29,7 @@ const OtherProjects = (props) => {
         <section className="other-projects">
             <div className="row">
                 <p className="paragraph align-center u-margin-bottom-big u-margin-top-big">
-                    Check out other projects
+                    Check out other projects:
                 </p>
                 <ul className="other-projects__links">{reduced}</ul>
             </div>

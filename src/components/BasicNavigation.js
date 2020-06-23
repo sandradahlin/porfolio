@@ -18,11 +18,10 @@ export default function BasicNavigation(props) {
                 <li>
                     <Link to="/projects">Projects</Link>
                 </li>
-                {props.additionalItem && (
-                    <li>
-                        <Link to="/">{props.additionalItem}</Link>
-                    </li>
-                )}
+
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
             </ul>
         </>
     );
