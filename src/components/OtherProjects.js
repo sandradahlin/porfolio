@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 const OtherProjects = (props) => {
     let projects = [
@@ -27,12 +28,14 @@ const OtherProjects = (props) => {
 
     return (
         <section className="other-projects">
-            <div className="row">
-                <p className="paragraph align-center u-margin-bottom-big u-margin-top-big">
-                    Check out other projects:
-                </p>
-                <ul className="other-projects__links">{reduced}</ul>
-            </div>
+            <Fade>
+                <div className="row">
+                    <p className="paragraph align-center u-margin-bottom-big u-margin-top-big">
+                        Check out other projects:
+                    </p>
+                    <ul className="other-projects__links">{reduced}</ul>
+                </div>
+            </Fade>
         </section>
     );
 };

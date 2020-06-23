@@ -1,8 +1,7 @@
 import React from "react";
 import profileImg from "../img/profileimg.jpg";
 import SocialLinks from "./SocialLinks";
-import ScrollAnimation from "react-animate-on-scroll";
-
+import Flip from "react-reveal/Flip";
 const HomeIntro = () => {
     return (
         <header className="header">
@@ -10,26 +9,29 @@ const HomeIntro = () => {
                 <div className="card__side card__side--front"></div>
                 <div className="card__side card__side--back"></div>
             </div> */}
-            <div className="header__intro-box box-background-light">
-                <div class="card">
-                    <div class="card__side card__side--front">
-                        <img
-                            className="header__profile-pic"
-                            src={profileImg}
-                        ></img>
-                        <div className="header__content-box">
-                            <h1 className="heading-primary">
-                                <span className="heading-primary--main">
-                                    Hi! I'm Aleksandra
-                                </span>
-                                <span className="heading-primary--sub">
-                                    Frontend Web Developer |
-                                </span>
-                            </h1>
-                            <SocialLinks className="u-margin-top-small" />
-                        </div>
-                    </div>
-                    {/* <div class="card__side card__side--back card__side--back-1">
+
+            <div className="header__intro-box ">
+                <Flip>
+                    <div className="box-background-light">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <img
+                                    className="header__profile-pic"
+                                    src={profileImg}
+                                ></img>
+                                <div className="header__content-box">
+                                    <h1 className="heading-primary">
+                                        <span className="heading-primary--main">
+                                            Hi! I'm Aleksandra
+                                        </span>
+                                        <span className="heading-primary--sub">
+                                            Frontend Web Developer |
+                                        </span>
+                                    </h1>
+                                    <SocialLinks className="u-margin-top-small" />
+                                </div>
+                            </div>
+                            {/* <div class="card__side card__side--back card__side--back-1">
                         <div class="card__cta">
                             <div class="card__price-box">
                                 <p class="card__price-only">Only</p>
@@ -40,8 +42,9 @@ const HomeIntro = () => {
                             </a>
                         </div>
                     </div> */}
-                </div>
-                {/* <div className="header__intro-box--front">
+                        </div>
+                    </div>
+                    {/* <div className="header__intro-box--front">
                     <img className="header__profile-pic" src={profileImg}></img>
                     <div className="header__content-box">
                         <h1 className="heading-primary">
@@ -55,6 +58,7 @@ const HomeIntro = () => {
                         <SocialLinks className="u-margin-top-small" />
                     </div>
                 </div> */}
+                </Flip>
             </div>
         </header>
     );

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 //back img
+import Roll from "react-reveal/Roll";
 const ProjectIntro = (props) => {
     const { bgImg, client, desc, link, name, textColorIntro } = props.project;
 
@@ -36,17 +37,19 @@ const ProjectIntro = (props) => {
                 >
                     {desc}
                 </p>
-                <a
-                    href={link}
-                    target="blank"
-                    className={`${
-                        textColorIntro === "#fff"
-                            ? "btn-ghost-white"
-                            : "btn-ghost-dark"
-                    }`}
-                >
-                    VISIT WEBSITE
-                </a>
+                <Roll>
+                    <a
+                        href={link}
+                        target="blank"
+                        className={`${
+                            textColorIntro === "#fff"
+                                ? "btn-ghost-white"
+                                : "btn-ghost-dark"
+                        }`}
+                    >
+                        VISIT WEBSITE
+                    </a>
+                </Roll>
             </div>
         </section>
     );
