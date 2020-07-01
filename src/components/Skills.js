@@ -24,7 +24,12 @@ const Skills = () => {
                             <p className="paragraph u-margin-bottom-medium">
                                 You can check out my CV on LinkedIn.
                             </p>
-                            <a href="" className="btn-ghost-dark">
+                            <a
+                                href="https://www.linkedin.com/in/aleksandra-toholjevic-46528b28/"
+                                className="btn-ghost-dark"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 OPEN LINKEDIN
                             </a>
                         </div>
@@ -32,29 +37,33 @@ const Skills = () => {
                     <div className="col-1-of-2 section-skills__skill-box">
                         <ul className="skill-icons u-margin-bottom-medium">
                             <li>
-                                <i class="fab fa-html5"></i>
+                                <i className="fab fa-html5"></i>
                                 <p>HTML 5</p>
                             </li>
                             <li>
-                                <i class="fab fa-css3-alt"></i>
+                                <i className="fab fa-css3-alt"></i>
                                 <p>CSS 3</p>
                             </li>
                             <li>
-                                <i class="fab fa-js"></i>
+                                <i className="fab fa-js"></i>
                                 <p>JavaScript</p>
                             </li>
                         </ul>
                         <ul className="skill-icons u-margin-bottom-medium">
                             <li>
-                                <i class="fab fa-react"></i>
+                                <i className="fab fa-react"></i>
                                 <p>React</p>
                             </li>
                             <li>
-                                <img className="logo-img" src={reduxLogo}></img>
+                                <img
+                                    className="logo-img"
+                                    src={reduxLogo}
+                                    alt=""
+                                ></img>
                                 <p>Redux</p>
                             </li>
                             <li>
-                                <i class="fab fa-git-alt"></i>
+                                <i className="fab fa-git-alt"></i>
                                 <p>Git</p>
                             </li>
                         </ul>
@@ -63,15 +72,16 @@ const Skills = () => {
                                 <img
                                     className="logo-img-small"
                                     src={mongoLogo}
+                                    alt=""
                                 ></img>
                                 <p>MongoDB</p>
                             </li>
                             <li>
-                                <i class="fab fa-node"></i>
+                                <i className="fab fa-node"></i>
                                 <p>NodeJS</p>
                             </li>
                             <li>
-                                <i class="fab fa-sass"></i>
+                                <i className="fab fa-sass"></i>
                                 <p>Sass</p>
                             </li>
                         </ul>

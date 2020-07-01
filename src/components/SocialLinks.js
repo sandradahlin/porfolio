@@ -5,18 +5,30 @@ export default function SocialLinks(props) {
         <>
             <ul className={`social-links ${props.className}`}>
                 <li>
-                    <a href="https://www.linkedin.com/in/aleksandra-toholjevic-46528b28/">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a
+                        href="https://www.linkedin.com/in/aleksandra-toholjevic-46528b28/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i className="fab fa-linkedin-in"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/sandra-td" target="blank">
-                        <i class="fab fa-github"></i>
+                    <a
+                        href="https://github.com/sandra-td"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i className="fab fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:a.toholjevic@gmail.com">
-                        <i class="far fa-envelope-open"></i>{" "}
+                    <a
+                        href="mailto:a.toholjevic@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i className="far fa-envelope-open"></i>{" "}
                     </a>
                 </li>
             </ul>

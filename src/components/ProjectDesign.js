@@ -1,6 +1,4 @@
 import React from "react";
-import fontFamilyImage from "../img/lato.png";
-import colors from "../img/colors.png";
 import Fade from "react-reveal/Fade";
 
 const ProjectDesign = (props) => {
@@ -13,6 +11,7 @@ const ProjectDesign = (props) => {
                         <img
                             src={props.typo}
                             className="project__design-typography"
+                            alt=""
                         ></img>
                     </div>
                     <div className="col-1-of-2 ">
@@ -23,6 +22,7 @@ const ProjectDesign = (props) => {
                         <img
                             src={props.colors}
                             className="project__design-colors"
+                            alt=""
                         ></img>
                     </div>
                 </div>

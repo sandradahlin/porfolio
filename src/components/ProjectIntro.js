@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-//back img
 import Roll from "react-reveal/Roll";
+
 const ProjectIntro = (props) => {
     const { bgImg, client, desc, link, name, textColorIntro } = props.project;
 
@@ -12,44 +11,46 @@ const ProjectIntro = (props) => {
                 backgroundImage: `url(${bgImg})`
             }}
         >
-            <div
-                className={` ${
-                    props.id === "4"
-                        ? "text-box-left u-margin-top-big u-margin-left-big"
-                        : "project__text-box-absolute"
-                } `}
-            >
-                <p
-                    className="paragraph uppercase u-margin-bottom-small "
-                    style={{ color: textColorIntro }}
+            <div className="row">
+                <div
+                    className={` ${
+                        props.id === "4"
+                            ? "text-box-left u-margin-top-big u-margin-left-small"
+                            : "project__text-box-absolute"
+                    } `}
                 >
-                    {client}
-                </p>
-                <h2
-                    className="heading-secondary u-margin-bottom-medium "
-                    style={{ color: textColorIntro }}
-                >
-                    {name}
-                </h2>
-                <p
-                    className="paragraph  u-margin-bottom-big "
-                    style={{ color: textColorIntro }}
-                >
-                    {desc}
-                </p>
-                <Roll>
-                    <a
-                        href={link}
-                        target="blank"
-                        className={`${
-                            textColorIntro === "#fff"
-                                ? "btn-ghost-white"
-                                : "btn-ghost-dark"
-                        }`}
+                    <p
+                        className="paragraph uppercase u-margin-bottom-small "
+                        style={{ color: textColorIntro }}
                     >
-                        VISIT WEBSITE
-                    </a>
-                </Roll>
+                        {client}
+                    </p>
+                    <h2
+                        className="heading-secondary u-margin-bottom-medium "
+                        style={{ color: textColorIntro }}
+                    >
+                        {name}
+                    </h2>
+                    <p
+                        className="paragraph  u-margin-bottom-big "
+                        style={{ color: textColorIntro }}
+                    >
+                        {desc}
+                    </p>
+                    <Roll>
+                        <a
+                            href={link}
+                            target="blank"
+                            className={`${
+                                textColorIntro === "#fff"
+                                    ? "btn-ghost-white"
+                                    : "btn-ghost-dark"
+                            }`}
+                        >
+                            VISIT WEBSITE
+                        </a>
+                    </Roll>
+                </div>
             </div>
         </section>
     );

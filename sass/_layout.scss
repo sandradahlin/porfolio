@@ -9,8 +9,7 @@
     background-size: cover;
     background-position: top;
     position: relative;
-    margin-top: -7vh;
-    z-index: -11;
+    // margin-top: -7vh;
 
     &__profile-pic {
         height: 20rem;
@@ -19,26 +18,13 @@
 
     &__intro-box {
         position: absolute;
+        z-index: 444;
+
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-
-        // &--front {
-        //     background-color: $color-white;
-        // }
-
-        // &--back {
-        //     transform: rotateY(180deg);
-        // }
     }
-    // &:hover &--front {
-    //     transform: rotateY(-180deg);
-    // }
-
-    // &:hover &--back {
-    //     transform: rotateY(0);
-    // }
 }
 
 .social-links {
@@ -56,29 +42,44 @@
         background-color: #777;
         padding: 1.2rem;
         border-radius: 100px;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
 .nav {
     font-size: 2.3rem;
-    padding: 1.5rem 0;
+    // padding: 1.5rem 0;
+    width: 80%;
     font-weight: 300;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    height: 7vh;
+    position: absolute;
+    top: 0;
+    padding-top: 0.3%;
+    left: 50%;
+    transform: translate(-50%, 0);
     text-transform: uppercase;
     word-spacing: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 11;
 
     .main-nav,
     .secondary-nav {
+        width: 100%;
+        height: 7vh;
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto; // margin-right: 6rem;
+        background-color: rgba(255, 255, 248, 0.5);
         li {
             margin-right: 2rem;
             a {
-                color: #555;
+                color: #333;
                 padding-bottom: 0.5rem;
                 transition: all 0.3s;
                 border-bottom: 1px solid transparent;
@@ -90,6 +91,7 @@
             &:not(:last-child)::after {
                 content: "|";
                 margin-left: 2rem;
+                color: #444;
             }
         }
     }
@@ -221,42 +223,6 @@ footer {
         margin-top: 10%;
     }
 }
-// .card {
-//     // FUNCTIONALITY
-//     perspective: 150rem;
-//     -moz-perspective: 150rem;
-//     position: relative;
-//     height: 52rem;
-//     &__side {
-//         height: 52rem;
-//         transition: all 0.8s ease;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         -webkit-backface-visibility: hidden;
-//         backface-visibility: hidden;
-//         border-radius: 3px;
-//         overflow: hidden;
-//         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-
-//         &--front {
-//             background-color: #fff;
-//         }
-
-//         &--back {
-//             transform: rotateY(180deg);
-//         }
-//     }
-
-//     &:hover &__side--front {
-//         transform: rotateY(-180deg);
-//     }
-
-//     &:hover &__side--back {
-//         transform: rotateY(0);
-//     }
-// }
 
 .display-flex-row--start {
     width: 70%;
@@ -290,4 +256,8 @@ footer {
         justify-content: center;
         align-items: center;
     }
+}
+
+.wrapper {
+    position: relative;
 }

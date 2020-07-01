@@ -1,7 +1,8 @@
 .heading-primary,
 .heading-secondary,
 .heading-tertiary,
-.heading-quaternary {
+.heading-quaternary,
+.heading-tertiary-white {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
 }
@@ -42,15 +43,6 @@
     color: #555;
     margin-bottom: 1rem;
     font-weight: 400;
-}
-
-.heading-tertiary:after {
-    display: block;
-    content: " ";
-    height: 1px;
-    width: 15rem;
-    background-color: $background-color-green;
-    margin: 2rem 0;
 }
 
 .heading-tertiary:after {

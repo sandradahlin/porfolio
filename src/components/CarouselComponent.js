@@ -1,5 +1,4 @@
 import React from "react";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
@@ -9,7 +8,7 @@ const CarouselComponent = (props) => {
             <Carousel autoPlay infiniteLoop className="my-carousel">
                 {props.img.map((i) => (
                     <div>
-                        <img src={i} />
+                        <img src={i} alt="" />
                     </div>
                 ))}
             </Carousel>

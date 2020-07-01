@@ -1,7 +1,6 @@
 import React from "react";
-import computerImage from "../img/mac.jpg";
-import ScrollAnimation from "react-animate-on-scroll";
 import Fade from "react-reveal/Fade";
+import computerImage from "../img/mac.jpg";
 
 const AboutMe = () => {
     return (
@@ -9,7 +8,11 @@ const AboutMe = () => {
             <section className="section-about" id="about">
                 <div className="row">
                     <div className="col-1-of-2">
-                        <img src={computerImage} className="image-left"></img>
+                        <img
+                            src={computerImage}
+                            className="image-left"
+                            alt=""
+                        ></img>
                     </div>
                     <div className="col-1-of-2 u-margin-top-big text-box box-background-dark ">
                         <h3 className="heading-tertiary-white">Why code?</h3>

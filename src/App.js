@@ -1,28 +1,33 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./css/styles.css";
-import Homepage from "./views/Homepage";
-import Projectspage from "./views/Projectspage";
-import Project from "./views/Project";
-import Navbar from "./components/Navbar";
-import ScrollToTop from "./components/ScrollToTop";
-import Footer from "./components/Footer";
-import NotFound from "./components/NotFound";
-import AppShell from "./components/AppShell";
+import { css } from "@emotion/core";
+import { Suspense } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
+
+const AppShell = React.lazy(() => import("./components/AppShell"));
 
 function App() {
+    const override = css`
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    `;
+
     return (
         <>
-            <Router>
-                <main>
-                    <div className="wrapper">
-                        <Navbar />
-                        <ScrollToTop />
-                        <AppShell />
-                    </div>
-                </main>
-                <Footer />
-            </Router>
+            <Suspense
+                fallback={
+                    <ClipLoader
+                        css={override}
+                        size={150}
+                        color={"#123abc"}
+                        loading={true}
+                    />
+                }
+            >
+                <AppShell />
+            </Suspense>
         </>
     );
 }

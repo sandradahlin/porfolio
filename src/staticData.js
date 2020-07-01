@@ -7,7 +7,6 @@ import hawaiiSliderImage3 from "./img/hawaii-laptop-3.png";
 import mindfulSliderImage1 from "./img/Project_Mindful-1-min.png";
 import mindfulSliderImage2 from "./img/Project_Mindful-2-min.png";
 
-import movieSliderImage1 from "./img/Project_MovieApp-1-min.png";
 import movieSliderImage2 from "./img/Project_MovieApp-2-min.png";
 import movieSliderImage3 from "./img/Project_MovieApp-3-min.png";
 import movieSliderImage4 from "./img/Project_MovieApp-4-min.png";

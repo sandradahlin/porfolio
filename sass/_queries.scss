@@ -1,4 +1,27 @@
 /*Bigger devices*/
+@media screen and (min-width: 1600px) {
+    .projects-page,
+    .section-movie-app,
+    .section-mindful,
+    .section-contacts-app,
+    .section-hawaii {
+        height: 80vh;
+        padding-top: 15vh;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .section-movie-app,
+    .section-mindful {
+        padding-top: 30vh;
+    }
+    .section-hawaii {
+        padding-top: 25vh;
+    }
+    .section-contacts-app {
+        padding-top: 18vh;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .hero-text-box {
@@ -18,21 +41,18 @@
 /*Small to big tablet in landscape mode*/
 
 @media only screen and (max-width: 1024px) {
-    .projects-page {
-        height: 50vh;
-    }
     .section-movie-app,
     .section-mindful {
-        height: 65vh;
+        height: 100vh;
         padding-top: 23vh;
     }
     .section-hawaii {
-        height: 65vh;
+        height: 100vh;
 
-        padding-top: 18vh;
+        padding-top: 15vh;
     }
     .section-contacts-app {
-        height: 70vh;
+        height: 100vh;
 
         padding-top: 18vh;
     }
@@ -55,6 +75,10 @@
     }
     footer {
         height: 30%;
+    }
+
+    .section-skills__skill-box {
+        margin-top: 4rem;
     }
     .row {
         max-width: 100%;
@@ -140,9 +164,6 @@
         width: 100%;
         margin-left: 0;
     }
-    footer {
-        height: 45vh;
-    }
 
     .projects-page {
         height: 60vh;
@@ -154,7 +175,7 @@
     }
     .section-hawaii {
         height: 90vh;
-        padding-top: 12vh;
+        padding-top: 15vh;
     }
     .section-contacts-app {
         height: 70vh;
@@ -202,10 +223,6 @@
     body {
         font-size: 16px;
     }
-
-    /* .main-nav {
-      display: none;
-    } */
 
     .main-nav {
         float: left;

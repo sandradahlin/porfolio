@@ -2,17 +2,14 @@ import React, { useState, useEffect } from "react";
 import ProjectIntro from "../components/ProjectIntro";
 import ProjectImageLeft from "../components/ProjectImageLeft";
 import ProjectDesign from "../components/ProjectDesign";
-import Navbar from "../components/NavbarOtherPages";
 import OtherProjects from "../components/OtherProjects";
 import { projectsData } from "../staticData";
-import { render } from "@testing-library/react";
 
 const Project = (props) => {
     const [project, setProject] = useState({
         bgImg: "",
         name: "",
         client: "",
-        textColorIntro: "",
         desc: "",
         tech: "",
         link: "",
@@ -39,7 +36,6 @@ const Project = (props) => {
             designIntro: projectToShow.designIntro,
             designTypographyImg: projectToShow.designTypographyImg,
             designColorsImg: projectToShow.designColorsImg,
-            textColorIntro: projectToShow.textColorIntro,
             sliderImages: projectToShow.sliderImages
         });
     }, [props.match.params.id]);
@@ -70,6 +66,5 @@ const Project = (props) => {
 
     return <React.Fragment>{renderComponents()}</React.Fragment>;
 };
-//add component with links to other projects
 
 export default Project;
